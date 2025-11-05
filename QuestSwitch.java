@@ -47,15 +47,63 @@ public class QuestSwitch {
         if (predikatNilai.equals("A (Sangat Baik)") || predikatNilai.equals("AB (Baik Sekali)")) {
             System.out.println("Selamat, Anda memenuhi syarat predikat untuk mendaftar.");
             System.out.println("Silakan pilih mata kuliah yang ingin diajukan:");
-        }
 
-        System.out.println("1. Struktur Data");
+            System.out.println("1. Struktur Data");
             System.out.println("2. Pemrograman Berorientasi Objek");
             System.out.println("3. Basis Data");
             System.out.println("4. Algoritma dan Pemrograman");
             System.out.println("5. Rekayasa Perangkat Lunak");
             System.out.print("\nPilih mata kuliah (1-5) yang ingin diajukan: ");
             int mataKuliah = ns.nextInt();
+
+            System.out.println("\n--- Hasil Seleksi Akhir ---");
+            switch (mataKuliah) {
+                case 1:
+                    System.out.println("Anda memilih mata kuliah: Struktur Data (Nilai: " + strukturData + ")");
+                    if (strukturData >= 75) {
+                        System.out.println("STATUS: ELIGIBLE! Anda lulus seleksi Asisten Dosen.");
+                    } else {
+                        System.out.println("STATUS: TIDAK ELIGIBLE. Nilai Anda di bawah 75.");
+                    }
+                    break;
+                case 2:
+                    System.out.println("Anda memilih mata kuliah: Pemrograman Berorientasi Objek (Nilai: " + pemrogramanBerorientasiObjek + ")");
+                    if (pemrogramanBerorientasiObjek >= 75) {
+                        System.out.println("STATUS: ELIGIBLE! Anda lulus seleksi Asisten Dosen.");
+                    } else {
+                        System.out.println("STATUS: TIDAK ELIGIBLE. Nilai Anda di bawah 75.");
+                    }
+                    break;
+                case 3:
+                    System.out.println("Anda memilih mata kuliah: Basis Data (Nilai: " + basisData + ")");
+                    if (basisData >= 75) {
+                        System.out.println("STATUS: ELIGIBLE! Anda lulus seleksi Asisten Dosen.");
+                    } else {
+                        System.out.println("STATUS: TIDAK ELIGIBLE. Nilai Anda di bawah 75.");
+                    }
+                    break;
+                case 4:
+                    System.out.println("Anda memilih mata kuliah: Algoritma dan Pemrograman (Nilai: " + adp + ")");
+                    if (adp >= 75) {
+                        System.out.println("STATUS: ELIGIBLE! Anda lulus seleksi Asisten Dosen.");
+                    } else {
+                        System.out.println("STATUS: TIDAK ELIGIBLE. Nilai Anda di bawah 75.");
+                    }
+                    break;
+                case 5:
+                    System.out.println("Anda memilih mata kuliah: Rekayasa Perangkat Lunak (Nilai: " + rpl + ")");
+                    if (rpl >= 75) {
+                        System.out.println("STATUS: ELIGIBLE! Anda lulus seleksi Asisten Dosen.");
+                    } else {
+                        System.out.println("STATUS: TIDAK ELIGIBLE. Nilai Anda di bawah 75.");
+                    }
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid. Program berakhir.");
+                    break;
+            }
+        } else {
+            System.out.println("Maaf, Anda tidak memenuhi syarat predikat untuk mendaftar.");
+        }
     }
 }
-
