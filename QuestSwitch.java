@@ -48,6 +48,14 @@ public class QuestSwitch {
             System.out.println("Selamat, Anda memenuhi syarat predikat untuk mendaftar.");
             System.out.println("Silakan pilih mata kuliah yang ingin diajukan:");
         }
+
+        System.out.println("1. Struktur Data");
+            System.out.println("2. Pemrograman Berorientasi Objek");
+            System.out.println("3. Basis Data");
+            System.out.println("4. Algoritma dan Pemrograman");
+            System.out.println("5. Rekayasa Perangkat Lunak");
+            System.out.print("\nPilih mata kuliah (1-5) yang ingin diajukan: ");
+            int mataKuliah = ns.nextInt();
     }
 }
 
