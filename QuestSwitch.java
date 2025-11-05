@@ -26,6 +26,10 @@ public class QuestSwitch {
         rataRata100 = totalNilai / 5.0;
 
         ipk = (rataRata100 / 100.0) * 4.0;
+
+        System.out.println("Hasil Penilaian Akademik");
+        System.out.println("Rata-rata Nilai (skala 100): " + rataRata100);
+        System.out.println("IPK Sederhana (skala 4.0):   " + ipk);
     }
 }
 
