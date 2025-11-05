@@ -103,7 +103,10 @@ public class QuestSwitch {
                     break;
             }
         } else {
-            System.out.println("Maaf, Anda tidak memenuhi syarat predikat untuk mendaftar.");
+            System.out.println("Maaf, predikat Anda (" + predikatNilai + ") belum memenuhi syarat.");
+            System.out.println("Anda tidak lulus seleksi asisten dosen.");
         }
+        System.out.println("Terima kasih telah menggunakan sistem program seleksi asisten dosen.");
+        ns.close();
     }
 }
