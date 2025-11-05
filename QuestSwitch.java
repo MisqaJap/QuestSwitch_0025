@@ -21,6 +21,9 @@ public class QuestSwitch {
         adp = ns.nextDouble();
         System.out.print("Masukkan nilai Rekayasa Perangkat Lunak: ");
         rpl = ns.nextDouble();
+
+        double totalNilai = strukturData + pemrogramanBerorientasiObjek + basisData + adp + rpl;
+        rataRata100 = totalNilai / 5.0;
     }
 }
 
