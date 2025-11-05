@@ -43,7 +43,11 @@ public class QuestSwitch {
             predikatNilai = "C (Kurang)";
         }
         System.out.println("Predikat nilai: " + predikatNilai);
-        ns.close();
+
+        if (predikatNilai.equals("A (Sangat Baik)") || predikatNilai.equals("AB (Baik Sekali)")) {
+            System.out.println("Selamat, Anda memenuhi syarat predikat untuk mendaftar.");
+            System.out.println("Silakan pilih mata kuliah yang ingin diajukan:");
+        }
     }
 }
 
