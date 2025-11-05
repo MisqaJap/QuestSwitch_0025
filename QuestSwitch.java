@@ -24,6 +24,8 @@ public class QuestSwitch {
 
         double totalNilai = strukturData + pemrogramanBerorientasiObjek + basisData + adp + rpl;
         rataRata100 = totalNilai / 5.0;
+
+        ipk = (rataRata100 / 100.0) * 4.0;
     }
 }
 
