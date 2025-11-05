@@ -30,6 +30,20 @@ public class QuestSwitch {
         System.out.println("Hasil Penilaian Akademik");
         System.out.println("Rata-rata Nilai (skala 100): " + rataRata100);
         System.out.println("IPK Sederhana (skala 4.0):   " + ipk);
+
+        if (ipk >= 3.75) {
+            predikatNilai = "A (Sangat Baik)";
+        } else if (ipk >= 3.50) { // 3.50 - 3.74
+            predikatNilai = "AB (Baik Sekali)";
+        } else if (ipk >= 3.00) { // 3.00 - 3.49
+            predikatNilai = "B (Baik)";
+        } else if (ipk >= 2.50) { // 2.50 - 2.99
+            predikatNilai = "BC (Cukup)";
+        } else { // < 2.50
+            predikatNilai = "C (Kurang)";
+        }
+        System.out.println("Predikat nilai: " + predikatNilai);
+        ns.close();
     }
 }
 
